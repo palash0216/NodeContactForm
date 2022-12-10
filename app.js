@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 
 // View engine setup
-app.engine('handlebars', exphbs());
+app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 // Static folder
